@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import BackThisProject from "./BackThisProject";
+import BookCount from "./BookCount";
+import Hero from "./Hero";
+import ProjectDetails from "./ProjectDetails";
 
 function App() {
+  const [toggleModel, setToggleModel] = useState(false);
+
+  function DisplayModel() {
+    setToggleModel(!toggleModel);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <BookCount DisplayModel={DisplayModel} />
+      <ProjectDetails />
+      <BackThisProject
+        toggleModel={toggleModel}
+        setToggleModel={setToggleModel}
+      />
     </div>
   );
 }

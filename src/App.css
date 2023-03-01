@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Epilogue:ital,wght@1,200&family=Inter:wght@400;700;800&family=Manrope:wght@800&family=Merriweather:ital,wght@0,300;0,700;1,400&family=Mulish:wght@200;300;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Commissioner", sans-serif;
+  line-height: 1.7;
+  position: relative;
+}
+p {
+  color: hsl(0, 0%, 48%);
+  font-size: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 3%;
+}
+.nav h3 {
+  margin-right: auto;
+  color: white;
+  font-weight: bold;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 7px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Hero-bg-img {
+  background-image: url(./Img/image-hero-desktop.jpg);
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.master,
+.countdown,
+.projectdetails,
+.Backthisproject {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: hsl(0, 0%, 98%);
+  padding: 20px;
+}
+.mastercraftBtn {
+  display: flex;
+  justify-content: space-between;
+}
+.backprojectbtn,
+.bookmarkbtn,
+.flex button {
+  background-color: hsl(176, 72%, 28%);
+  border-radius: 20px;
+  color: white;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+}
+.bookmarkbtn {
+  color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 88%);
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+.iconbookmark {
+  margin: 0;
+  height: 40px;
+  font-size: 10px;
+  margin-right: 10px;
+}
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.countdown div {
+  border-right: 2px solid hsl(0, 0%, 88%);
+  padding-right: 35px;
+}
+.projectdetails {
+  text-align: start;
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 300px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex h4 {
+  color: hsl(176, 50%, 47%);
+}
+.App {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Bookcount {
+  position: absolute;
+  top: 14%;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+}
+.master {
+  margin-bottom: 15px;
+  padding-top: 0;
+  border-radius: 5px;
+}
+.Bamboo,
+.Blackedition,
+.Mahogamy {
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 20px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.Backthisproject {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  right: 0;
+  max-width: 650px;
+  /* display: none; */
+}
+#showModel {
+  display: block;
+}
+#removeModel {
+  display: none;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.autoalign {
+  justify-content: left;
+  gap: 8px;
+  align-content: center;
+  align-items: center;
+}
+.autoalign h4 {
+  margin-right: auto;
+}
+.autoalign input {
+  margin-right: 13px;
+}
+.flexcol p {
+  margin-left: 33px;
+}
+.pad {
+  padding: 20px;
+}
+/* .none {
+  display: none;
+} */
+.borderwrap {
+  border: 1px solid hsl(0, 0%, 80%);
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px;
+}
+.pad p {
+  margin-right: auto;
+}
+.pad input {
+  border-radius: 10px;
+  width: 50px;
+  border: 1px solid hsl(0, 0%, 78%);
+}
+.withoutReward {
+  border: 1px solid hsl(0, 0%, 80%);
+}
+.rewardbtn {
+  display: flex;
+  justify-content: flex-end;
+}
+.thispro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.thispro img {
+  cursor: pointer;
+}
+.support-master {
+  text-align: left;
 }
